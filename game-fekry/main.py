@@ -50,10 +50,10 @@ def abot():
     win.resizable(False, False)
     win.configure(bg='#a1def8')
 
-    url1 = 'https://github.com/r4myh/game-fekry'
+    url1 = 'https://github.com/rm-onata/fekry-game'
     t.Label(win, text='my github : {0}'.format(url1), bg='#0173f8',fg='#a1def8').pack()
 
-    url2 = 'https://www.instagram.com/0day_online'
+    url2 = 'https://www.instagram.com/0day_data'
     t.Label(win, text='my page on instagram : {0}'.format(url2), bg='#0173f8',fg='#a1def8').pack()
 
 
