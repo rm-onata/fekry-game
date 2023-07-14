@@ -42,24 +42,13 @@ test = [test1, test2, test3, test4, test5, test6, test7]
 
 class Quiz:
     def __init__(self):
-         
         self.q_no=0
-         
         self.display_question()
-         
-
         self.opt_selected = t.IntVar()
-         
-
         self.opts = self.radio_buttons()
-         
         self.display_options()
-         
         self.data_size = len(question)
-         
         self.correct = 0
-
-
 
     def display_result(self):
       wrong_count = self.data_size - self.correct
@@ -78,33 +67,25 @@ class Quiz:
  
  
     def check_ans(self, q_no):
-         
         if self.opt_selected.get() == answer[q_no]:
             return True
  
 
     def next_btn(self):
-         
         if self.check_ans(self.q_no):
-             
             self.correct += 1
-         
         self.q_no += 1
          
         if self.q_no == self.data_size:
-             
             self.display_result()
-             
             root.destroy()
         else:
             self.display_question()
             self.display_options()
 
 
-
     def display_options(self):
         val = 0
-      
         self.opt_selected.set(0)
 
         for option in options[self.q_no]:
@@ -120,19 +101,13 @@ class Quiz:
 
 
     def radio_buttons(self):
-         
         q_list = []
-         
         y_pos = 100
          
         while len(q_list) < 4:
-             
             radio_btn = t.Radiobutton(root, text=" ",variable=self.opt_selected, value = len(q_list)+1,font = ("ariel",14), bg='#99cceb', fg='#202020')
-             
             q_list.append(radio_btn)
-             
             radio_btn.place(x = 70, y = y_pos)
-             
             y_pos += 30
 
         return q_list
