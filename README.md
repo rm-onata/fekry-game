@@ -1,3 +1,3 @@
 # fekry-game
 
-gui software for child
+simple game box
