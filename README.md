@@ -1,3 +1,1 @@
-# fekry-game
-
-simple game box
+JustForFunny
